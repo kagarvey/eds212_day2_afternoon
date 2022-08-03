@@ -1,0 +1,43 @@
+---
+title: "Creating and working with vectors"
+author: "Kelly Garvey"
+date: '2022-08-03'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+### Make some vectors 
+```{r}
+marmots <- c("blue", "green", "4", "yellow")
+
+# check the class
+class(marmots)
+```
+
+```{r}
+pika <- c(12.4,6.8,2.9,8.8,8.5)
+class(pika)
+
+
+# scalar multiplier 
+scalar_pika <- 5.2 * pika
+```
+
+
+```{r}
+bananas <- c(1,2,3)
+apples <- c(6,7,8)
+
+bananas + apples
+bananas - apples
+bananas %*% apples
+```
+
